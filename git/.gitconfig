@@ -1,0 +1,19 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[user]
+	name = Yuki Okushi
+	email = jtitor@2k36.org
+	signingkey = 379CEEFDD63E5DD7
+[pull]
+	rebase = true
+[rebase]
+	autosquash = true
+[commit]
+	gpgsign = true
+[push]
+	default = current
+[core]
+	editor = nvim
+[merge]
+	conflictStyle = diff3
