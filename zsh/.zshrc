@@ -121,9 +121,13 @@ alias cdws="cd ~/ws/gh/johntitor"
 alias rtim="rustup-toolchain-install-master"
 alias ros="rustup override set"
 alias gobuild="go build -trimpath -ldflags '-s -w'"
+alias rcl='(){ gh repo clone $1 $HOME/ws/gh/$1; }'
+alias c='code'
 
 source <(golangci-lint completion zsh)
 
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
