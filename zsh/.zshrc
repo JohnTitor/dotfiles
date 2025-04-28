@@ -20,6 +20,10 @@ eval "$(starship init zsh)"
 # zsh-autosuggestions setup
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# gh-clone setup
+export GH_CLONE_DEFAULT_DIR="$HOME/repos"
+export GH_CLONE_DEFAULT_ORG="JohnTitor"
+
 # Aliases
 alias pulm="git pull upstream master"
 alias pulma="git pull upstream main"
