@@ -1,0 +1,19 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[user]
+	name = Yuki Okushi
+	email = huyuumi.dev@gmail.com
+[pull]
+	rebase = true
+[rebase]
+	autosquash = true
+[push]
+	default = current
+[core]
+	editor = nvim
+[merge]
+	conflictStyle = diff3
