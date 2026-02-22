@@ -14,20 +14,20 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 
 # Aliases
-alias pulm="git pull upstream master"
-alias pulma="git pull upstream main"
-alias pusm="git push origin master"
-alias pusma="git push origin main"
+alias pulm="git pull upstream main"
+alias pulms="git pull upstream master"
+alias pusm="git push origin main"
+alias pusms="git push origin master"
 alias gc="git commit"
 alias gcm="git commit -m"
 alias gs="git switch"
 alias gsc="git switch -c"
-alias c='cursor'
+alias gpf="git push --force-with-lease"
 alias grep='rg'
 alias ls='eza --icons=always'
 alias cat='bat'
 
-eval "$(/home/jtitor/.local/bin/mise activate zsh)" # added by https://mise.run/zsh
+eval "$(/usr/bin/mise activate zsh)" # added by https://mise.run/zsh
 
 # zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -44,3 +44,4 @@ esac
 
 # starship: should be at the end of the file
 eval "$(starship init zsh)"
+export PATH=$HOME/.local/bin:$PATH
