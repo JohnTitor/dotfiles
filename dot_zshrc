@@ -27,7 +27,7 @@ alias grep='rg'
 alias ls='eza --icons=always'
 alias cat='bat'
 
-eval "$(/usr/bin/mise activate zsh)" # added by https://mise.run/zsh
+eval "$(/home/jtitor/.local/bin/mise activate zsh)" # added by https://mise.run/zsh
 
 # zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -45,3 +45,4 @@ esac
 # starship: should be at the end of the file
 eval "$(starship init zsh)"
 export PATH=$HOME/.local/bin:$PATH
+
