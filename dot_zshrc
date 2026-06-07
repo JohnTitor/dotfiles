@@ -22,10 +22,11 @@ alias gc="git commit"
 alias gcm="git commit -m"
 alias gs="git switch"
 alias gsc="git switch -c"
-alias gpf="git push --force-with-lease"
+alias gpf='git push --force-with-lease'
 alias grep='rg'
 alias ls='eza --icons=always'
 alias cat='bat'
+alias ghq='gh q'
 
 eval "$(/home/jtitor/.local/bin/mise activate zsh)" # added by https://mise.run/zsh
 
